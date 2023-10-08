@@ -1,0 +1,30 @@
+.developers-home {
+    width: 100%;
+    background-color: black;
+}
+.cards-block {
+    padding-top: 6rem;
+    color: aliceblue;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px;
+}
+.cards-header {
+    font-size: 3.5rem;
+    padding: 2rem;
+}
+
+@media screen and (max-width:940px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+}

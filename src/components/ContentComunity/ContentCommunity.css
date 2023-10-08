@@ -1,0 +1,93 @@
+.content-community {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    background-color: black;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card-container {
+    margin: 0 auto;
+    width: 80%;
+    display:flex;
+}
+
+.join-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:33%;
+    margin: 0 20px;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+.join-card:hover {
+    transform: scale(1.06);
+    transition: 0.2s;
+}
+.icon-wrapper {
+    width: 95%;
+}
+
+.icon-wrapper img {
+    width: 100%;
+}
+
+.card-shadow {
+    position: absolute;
+    z-index: 1;
+    height: 2.5rem;
+    width: calc(100% - 0.5rem);
+    left: 0.25rem;
+    right: 0.25rem;
+    top: calc(100% - 0.5rem);
+    clip-path: polygon(0% 0%, 5% 100%, 95% 100%, 100% 0px);
+}
+
+.telegram {
+    background-color:rgb(128, 236, 255);
+   
+}
+.telegram-shadow {
+    background: linear-gradient(rgb(128, 236, 255) -5.71%, transparent 100%);
+}
+.discord {
+    background-color:rgb(171, 102, 255) ;
+    
+}
+.discord-shadow {
+    background: linear-gradient(rgb(171, 102, 255) -5.71%, transparent 100%);
+}
+.twitter {
+    background-color:rgb(84, 125, 238);
+}
+
+.twitter-shadow {
+    background: linear-gradient(rgb(84, 125, 238) -5.71%, transparent 100%);
+}
+
+@media screen and (max-width:940px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .join-card {
+        margin-bottom: 2rem;
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .join-card {
+        width: 100%;
+        padding: 0;
+    }
+
+}

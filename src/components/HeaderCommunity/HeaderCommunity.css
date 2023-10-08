@@ -1,0 +1,98 @@
+.header-community {
+    background-color: black;
+    width: 100%;
+    padding-top: 90px;
+    height: 70vh;
+}
+
+.container {
+    max-width: 1200px;
+}
+.main-content {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 500px;
+    z-index: 2;
+}
+
+.header-text h1 {
+    font-size: 4rem;
+    color: aliceblue;
+    margin-left: 1rem;
+}
+
+.header-text p {
+    font-size: 1.8rem;
+    color: darkgray;
+}
+
+.header-image {
+    max-width: 540px;
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+    right: 2rem;
+}
+
+.header-image img {
+    width: 100%;
+    animation-name: rotation_3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes rotation_3 {
+    0%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    /* 25%{
+        transform: rotateX(0) rotateY(0);
+    } */
+    50%{
+        transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+    }
+    /* 75%{
+        transform: rotateX(0) rotateY(0);
+    } */
+    100%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+@media screen and (max-width:940px){
+ .main-content{
+    justify-content: center;
+ }
+}
+
+@media screen and (max-width:576px){
+    .header-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .header-text p {
+        font-size: 1.2rem;
+    }
+    .main-content{
+        justify-content: center;
+        align-items: center;
+        height: 365px;
+        text-align: center;
+     }
+     .header-image{
+        width: 450px;
+     }
+
+   }

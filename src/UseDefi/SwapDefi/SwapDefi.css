@@ -1,0 +1,150 @@
+.swap-defi {
+width: 100%;
+min-height: 50vh;
+padding-top: 2rem;
+padding-bottom: 4rem;
+background-color: black;
+}
+.work-zone {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    /* border: 1px solid gray; */
+    background: rgb(12,45,87);
+    background: radial-gradient(circle, rgba(12,45,87,1) 33%, rgba(23,35,101,1) 54%, rgba(8,13,77,1) 84%);
+    /* box-shadow: 0px 0px 10px blue, 0px 0px 40px blue, 0px 0px 70px blue ; */
+    border-radius: 1rem;
+    padding-top: .6rem;
+    padding: 1rem;
+    
+}
+
+.work-zone-header {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.select-network {
+    margin-right: 2rem;
+}
+.connect-wallet {
+    display: flex;
+    margin-right: .7rem;
+}
+.work-zone-swap {
+    align-self: center;
+}
+
+/* connected wallet or no styles */
+
+.unconnected {
+    display: none;
+}
+.connected {
+    display: block;
+}
+.connected-styles {
+    font-size: 1.274rem;
+    user-select: none;
+    position: relative;
+    color: aliceblue;
+    top: 5px;
+
+}
+.disconect-wallet {
+    color:red;
+    margin-left: 3px;
+    position: relative;
+    width: 24px;
+}
+.disable-icon {
+    cursor: pointer;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+  }
+  .dropdown .dropdown-btn {
+    padding: 10px;
+    background:linear-gradient(90deg, rgb(57, 57, 226), rgb(87, 6, 107));
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.06);
+    font-weight: 500;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    border-radius: 12px;
+  }
+  .dropdown .dropdown-content {
+    position: absolute;
+    top:110%;
+    left: 0;
+    padding: 15px;
+    background:linear-gradient(90deg, rgb(57, 57, 226), rgb(87, 6, 107));
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.06);
+    border-radius: 18px;
+    font-weight:500;
+    color:white;
+    width: 100%;
+    user-select: none;
+    z-index: 2;
+  }
+  
+  .dropdown .dropdown-content .dropdown-item {
+    padding: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .dropdown .dropdown-content .dropdown-item:hover {
+    background-color: bisque;
+    transition: all 0.2s;
+  }
+  .work-zone-swap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .4rem .1rem .9rem .1rem;
+  }
+  .confirm-operation-btn {
+    align-self: center;
+  }
+  .reverse-tokens {
+    align-self: center;
+    width: 1.5rem ;
+    height: 1.5rem;
+    margin: 4px 0px;
+    color: rgb(63, 200, 224);
+  }
+  .bs-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .bs-icon:hover{
+    transform: rotate(180deg);
+    transition: 0.3s;
+  }
+  .confirm-operation-btn{
+    margin-top: .6rem;
+  }
+
+
+  @media screen and (max-width:576px) {
+    .work-zone-header {
+      flex-direction: column;
+      align-self: center;
+    }
+    .select-network {
+      margin-bottom: 1rem;
+    }
+  }

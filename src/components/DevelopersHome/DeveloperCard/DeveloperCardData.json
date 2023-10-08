@@ -1,0 +1,23 @@
+[
+
+    {
+        "src": "/dev-data/aggregation-protocol.webp",
+        "header": "Aggregation Protocol",
+        "text": "Liquidity aggregation from multiple DEXes to ensure the best swap rates."
+    },
+    {
+        "src": "/dev-data/earn_1.webp",
+        "header": "Limit Order Protocol",
+        "text": "The most innovative and flexible limit order functionality in DeFi."
+    },
+    {
+        "src": "/dev-data/limit-order-protocol.webp",
+        "header": "Liquidity Protocol",
+        "text": "A next-generation AMM that offers capital efficiency to liquidity providers."
+    },
+    {
+        "src": "/dev-data/liquidity-protocol.webp",
+        "header": "DeFi Earn",
+        "text": "A derivative-based product offering liquidity providers attractive APYs."
+    }
+]

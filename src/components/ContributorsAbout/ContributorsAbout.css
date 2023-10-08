@@ -1,0 +1,83 @@
+.contributors-about{
+    background-color: black;
+    width: 100%;
+    color: aliceblue;
+}
+.contributors-about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contributor-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.container h2 {
+    margin-bottom: 1rem;
+}
+
+/* Contributor card styles*/
+.contributor-card {
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 16px;
+    padding: 24px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contributor-card:hover {
+    transform:scale(1.06);
+    transition: 0.2s;
+    border: 2px solid rgba(255,255,255,.25);
+    background-color: rgba(183, 185, 185, 0.212);
+}
+.contributor-photo{
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+.contributor-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.contributor-position{
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 8px;
+}
+
+
+
+
+@media screen and (max-width: 940px) {
+    .contributor-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .contributor-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contributor-list {
+        display: block;
+    }
+    .contributor-card {
+        margin-bottom: .8rem;
+    }
+    .container :nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+}
+

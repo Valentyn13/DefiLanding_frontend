@@ -1,0 +1,84 @@
+
+
+
+.sell-dropdown {
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+}
+.sell-dropdown-btn {
+    background: transparent;
+    /* background: linear-gradient(45deg, rgb(57, 57, 226), rgb(46, 224, 201)); */
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 15%);
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.sell-dropdown-content {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient( 45deg, var(--primary-purple) 0%, var(--primary-blue) 100%);
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 9%);
+    font-weight: 500;
+    color: gray;
+    width: 100%;
+    user-select: none;
+    z-index: 1;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.sell-dropdown-content::-webkit-scrollbar {
+    width: 0;
+  }
+
+.sell-dropdown-content.buy-content {
+    background: linear-gradient( 45deg, rgb(135, 133, 235) 0%, rgb(175, 116, 214));
+}
+
+
+
+
+
+
+.sell-coin {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.sell-dropdown-btn {
+    display: flex;
+}
+
+.sell-token-symbol {
+    position: relative;
+}
+.sell-token-symbol div {
+    position: absolute;
+    top: -14px;
+}
+
+
+.token {
+    display: flex;
+}
+
+
+.dropdown-token-symbol {
+  position: relative;
+}
+.dropdown-token-symbol div {
+    position: absolute;
+    top: 5px;
+}
+

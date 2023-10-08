@@ -1,0 +1,7 @@
+.byu-block-bg {
+    background:linear-gradient(
+        45deg, rgb(135, 133, 235) 0%,
+         rgb(175, 116, 214) 100%);
+
+    border: 1px solid var(--primary-purple);
+}

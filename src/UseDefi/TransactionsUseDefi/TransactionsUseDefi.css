@@ -1,0 +1,33 @@
+
+.transactions-use-defi {
+    width: 100%;
+    background-color: black;
+}
+.transactions-container {
+    max-width:900px;
+    margin: 0 auto;
+    color:white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.trn-header-text {
+ font-size: 2rem;
+ align-self: center;
+  font-weight: bold;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #9322d4, #221fd4);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip:border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
