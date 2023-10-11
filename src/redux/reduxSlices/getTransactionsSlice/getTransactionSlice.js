@@ -33,6 +33,7 @@ export const getTransactionSlice = createSlice({
     },
     extraReducers: {
         [getTransactionData.pending]: (state) => {
+            state.data = []
             state.status = 'pending'
         },
         [getTransactionData.fulfilled] : (state, action) => {

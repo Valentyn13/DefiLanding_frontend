@@ -1,6 +1,6 @@
 
 .transactions-use-defi {
-    width: 100%;
+    min-height: calc(100vh - 400px);
     background-color: black;
 }
 .transactions-container {

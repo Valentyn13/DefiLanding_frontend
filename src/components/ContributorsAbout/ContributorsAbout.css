@@ -31,6 +31,7 @@
 .contributor-card:hover {
     transform:scale(1.06);
     transition: 0.2s;
+    padding: 23px 15px;
     border: 2px solid rgba(255,255,255,.25);
     background-color: rgba(183, 185, 185, 0.212);
 }
